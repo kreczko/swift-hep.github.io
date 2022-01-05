@@ -12,7 +12,7 @@ title: SWIFT-HEP home page
 
   <div class=row>
     <div class="col-md-4">
-      <img src="{{ '/images/swift-HEP.png' | relative_url }}" alt="HSF Logo" width="30%">
+      <img src="{{ '/images/swift-HEP.png' | relative_url }}" alt="HSF Logo" width="100%">
     </div>
     <div class="col-md-8">
       <p class="lead">
@@ -36,8 +36,9 @@ title: SWIFT-HEP home page
         </ol>
 
       </div>
-
-      <hr>
+    </div>
+    <hr>
+    <div class="row">
 
       <div class="col-lg-4">
 
@@ -49,79 +50,81 @@ title: SWIFT-HEP home page
         <br>
         Workshops are organised every six months for the community to get together.
 
-        <hr>
-        <div class="col-lg-4">
-          <h2>Organisation</h2>
-          Write something here, link to HSF, etc
+      </div>
+      <div class="col-lg-4">
+        <h2>Organisation</h2>
+        Write something here, link to HSF, etc
 
-          <hr>
-          <div class="col-lg-4">
-            <h2>Activities</h2>
-            A C++ training is planned in 2022. This will follow the <a href="https://sidis.web.cern.ch/activities">
-              SIDIS </a> curriculum. Details to follow soon. <br>
-            A proposal to participate to the NVIDIA hackathon is being submitted by the Optix team.
-          </div>
-
-
-
-          <hr>
-          <h2> News and announcements </h2>
-
-          {% if site.paginate %}
-          {% assign posts = paginator.posts %}
-          {% else %}
-          {% assign posts = site.posts %}
-          {% endif %}
+      </div>
+      <div class="col-lg-4">
+        <h2>Activities</h2>
+        A C++ training is planned in 2022. This will follow the <a href="https://sidis.web.cern.ch/activities">
+          SIDIS </a> curriculum. Details to follow soon. <br>
+        A proposal to participate to the NVIDIA hackathon is being submitted by the Optix team.
+      </div>
 
 
-          {%- if posts.size > 0 -%}
-          {%- if page.list_title -%}
-          <h3 class="post-list-heading">{{ page.list_title }}</h3>
+
+    </div>
+    <hr>
+    <div class="row">
+      <h2> News and announcements </h2>
+
+      {% if site.paginate %}
+      {% assign posts = paginator.posts %}
+      {% else %}
+      {% assign posts = site.posts %}
+      {% endif %}
+
+
+      {%- if posts.size > 0 -%}
+      {%- if page.list_title -%}
+      <h3 class="post-list-heading">{{ page.list_title }}</h3>
+      {%- endif -%}
+      <ul class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in posts -%}
+        <li>
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
           {%- endif -%}
-          <ul class="post-list">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            {%- for post in posts -%}
-            <li>
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
-              <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-              </h3>
-              {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
-              {%- endif -%}
-            </li>
-            {%- endfor -%}
-          </ul>
+        </li>
+        {%- endfor -%}
+      </ul>
 
-          {% if site.paginate %}
-          <div class="pager">
-            <ul class="pagination">
-              {%- if paginator.previous_page %}
-              <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{
-                  paginator.previous_page }}</a></li>
-              {%- else %}
-              <li>
-                <div class="pager-edge">•</div>
-              </li>
-              {%- endif %}
-              <li>
-                <div class="current-page">{{ paginator.page }}</div>
-              </li>
-              {%- if paginator.next_page %}
-              <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page
-                  }}</a></li>
-              {%- else %}
-              <li>
-                <div class="pager-edge">•</div>
-              </li>
-              {%- endif %}
-            </ul>
-          </div>
+      {% if site.paginate %}
+      <div class="pager">
+        <ul class="pagination">
+          {%- if paginator.previous_page %}
+          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{
+              paginator.previous_page }}</a></li>
+          {%- else %}
+          <li>
+            <div class="pager-edge">•</div>
+          </li>
           {%- endif %}
+          <li>
+            <div class="current-page">{{ paginator.page }}</div>
+          </li>
+          {%- if paginator.next_page %}
+          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page
+              }}</a></li>
+          {%- else %}
+          <li>
+            <div class="pager-edge">•</div>
+          </li>
+          {%- endif %}
+        </ul>
+      </div>
+      {%- endif %}
 
-          {%- endif -%}
+      {%- endif -%}
 
 
-        </div>
+    </div>
