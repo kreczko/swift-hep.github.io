@@ -1,0 +1,17 @@
+baseURL = 'https://swift-hep.github.io'
+languageCode = 'en-us'
+title = 'SWIFT-HEP'
+
+theme = "swift-hep"
+relativeURLS = true
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+description = "SWIFT-HEP. SoftWare and InFrastruture Technology for High Energy Physics"
