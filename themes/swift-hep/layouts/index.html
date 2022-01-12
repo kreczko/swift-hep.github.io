@@ -8,9 +8,21 @@
                 <h2 class="text-secondary h3">{{ . }}</h2>
                 {{ end }}
             </div>
+        </div>
+    </div>
+    <hr class="separator" />
+    <div class="row">
+        <div class="col">
+            {{ partial "workpackages" . }}
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="row">
+        <div class="col">
             {{ .Content | markdownify }}
         </div>
     </div>
+    <hr class="separator">
     <div class="row">
         <div class="col">
             {{ partial "news" . }}
