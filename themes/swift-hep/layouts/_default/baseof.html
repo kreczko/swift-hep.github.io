@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{ partial "head" . }}
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <img src="/images/logos/swift-hep.png" alt="SwiftHEP logo" class="logo">
+    <header>{{- partial "header" . -}}</header>
+    {{ partial "navbar" . }}
+
+    <main class="mb-auto">
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        {{ partial "footer" . }}
+        {{ partial "script-footer" . }}
+    </footer>
+</body>
+
 </html>
