@@ -11,5 +11,10 @@
             {{ .Content | markdownify }}
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            {{ partial "news" . }}
+        </div>
+    </div>
 </div>
 {{ end }}
