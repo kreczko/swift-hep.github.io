@@ -5,6 +5,9 @@ title = 'SWIFT-HEP'
 theme = "swift-hep"
 relativeURLS = true
 
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
 [module]
   [[module.mounts]]
     source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
