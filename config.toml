@@ -17,7 +17,7 @@ pygmentsUseClasses = true
 unsafe = true
 
 [params]
-description = "SWIFT-HEP. SoftWare and InFrastruture Technology for High Energy Physics"
+description = "SoftWare and InFrastruture Technology for High Energy Physics"
 github_org = "https://github.com/swift-hep"
 
 menu = ["main", "workpackages"]
