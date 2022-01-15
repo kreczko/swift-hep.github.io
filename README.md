@@ -7,7 +7,7 @@ Repository for the [Offical SWIFT-HEP Project Website](https://swift-hep.github.
 To make changes, just fork and make Pull Requests. The site is built using
 [Hugo](https://gohugo.io), so see their documentation for:
 
-- [Installing Hugo](https://gohugo.io/getting-started/installing/)
+- [Installing Hugo](https://gohugo.io/getting-started/installing/) - make sure to install an `extended` version (e.g. from [here](https://github.com/gohugoio/hugo/releases))
 - [Building/Viewing the site locally](https://gohugo.io/getting-started/usage/#livereload)
 - [Site Configuration](https://gohugo.io/getting-started/configuration/)
 
