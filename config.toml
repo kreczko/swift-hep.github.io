@@ -20,4 +20,10 @@ unsafe = true
 description = "SoftWare and InFrastruture Technology for High Energy Physics"
 github_org = "https://github.com/swift-hep"
 
-menu = ["main", "workpackages"]
+sectionPagesMenu = "main"
+[menu]
+  [[menu.main]]
+     identifier = "workpackages"
+     title = "Work Packages"
+     url = "/workpackages/"
+     weight = 200
