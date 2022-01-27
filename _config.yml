@@ -24,6 +24,7 @@ description: SWIFT-HEP. SoftWare and InFrastruture Technology for High Energy Ph
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  swift-hep
+timezone: Europe/London
 
 # Build settings
 theme: minima
@@ -49,3 +50,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  workpackages:
+    output: true
+    permalink: /workpackages/:title.html
