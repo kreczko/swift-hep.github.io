@@ -1,14 +1,14 @@
 <div class="jumbotron text-center">
 
-    <div class="d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="d-flex justify-content-left">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <a class="navbar-brand" href="/"><img src="{{ "/images/logos/swift-hep.png" | relURL }}" alt="SwiftHEP logo"
-                        class="logo" height="60px"></a>
+                        class="logo" height="80px"></a>
                 <ul class="navbar-nav">
 
-                    <li class="nav-item display-6">
+                    <li class="nav-item display-12">
                         <a class="nav-link {{ if .IsHome }} active {{ end }} "
                             href="{{ .Site.Home.Permalink }}">Home</a>
                     </li>
@@ -18,7 +18,7 @@
                     {{ range .Site.Menus.main.ByWeight }}
 
                     {{ if .HasChildren }}
-                    <li class="nav-item dropdown display-6">
+                    <li class="nav-item dropdown display-12">
                         <a class='nav-link dropdown-toggle  {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }}'
                             href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
