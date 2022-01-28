@@ -1,5 +1,5 @@
 ---
-title: "Intellingent data and workflow management"
+title: "Intelligent data and workflow management"
 date: 2022-01-12T14:34:42Z
 draft: false
 menu:
