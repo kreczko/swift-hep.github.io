@@ -9,6 +9,6 @@ menu:
     parent: "workpackages"
 type: workpackages
 weight: 60
-display_in_summary: true
+display_in_summary: false
 ---
 
