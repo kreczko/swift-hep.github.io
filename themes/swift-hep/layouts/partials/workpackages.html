@@ -1,0 +1,13 @@
+<h2>Work packages</h2>
+<abbr title="SoftWare and InFrastruture Technology for High Energy Physics" class="initialism">SWIFT-HEP</abbr> is
+organised in 5 work packages:
+<ol>
+    {{- range where site.Pages "Type" "workpackages" -}}
+      {{- if (.Params.display_in_summary) -}}
+        <li>
+           <a href="{{.RelPermalink}}">{{.Title}}</a>
+           {{- with .Params.shorthand -}} <span class="px-2">({{.}})</span> {{- end -}}
+        </li>
+      {{- end -}}
+    {{- end -}}
+</ol>

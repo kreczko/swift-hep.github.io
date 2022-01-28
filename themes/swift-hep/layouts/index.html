@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img src="{{ "/images/logos/swift-hep.png" | relURL }}" alt="SwiftHEP logo" class="logo" height="200px">
+                {{ with .Params.subtitle }}
+                <h2 class="text-secondary h3">{{ . }}</h2>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="row">
+        <div class="col">
+            {{ partial "news" . }}
+        </div>
+    </div>
+    <hr class="separator" />
+    <div class="row">
+        <div class="col">
+            <h2>Organisation</h2>
+            Write something here, link to HSF, etc
+        </div>
+        <div class="col">
+            {{ partial "workpackages" . }}
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="row">
+        <div class="col">
+            <h2> Meetings </h2>
+            Meetings are held on a monthly basis to focus on a specific topic. They are typicallone-hour long on a Friday
+            afternoon.
+            Conveners of the 5 work packages meet every 4 weeks to plan future work
+            See the <a href="https://indico.cern.ch/category/11790/">Indico category for full details</a>.
+            <br>
+            Workshops are organised every six months for the community to get together.
+        </div>
+        <div class="col">
+            <h2>Activities</h2>
+            A C++ training is planned in 2022. This will follow the <a href="https://sidis.web.cern.ch/activities">SIDIS</a> curriculum.
+            Details to follow soon.
+        
+            A proposal to participate to the NVIDIA hackathon is being submitted by the Optix team.
+        </div>
+    </div>
+</div>
+{{ end }}

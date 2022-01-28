@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{ partial "head" . }}
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>{{- partial "header" . -}}</header>
+    {{ partial "dropdown-navbar" . }}
+
+    <main class="mb-auto">
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        {{ partial "footer" . }}
+        {{ partial "script-footer" . }}
+    </footer>
+</body>
+
+</html>

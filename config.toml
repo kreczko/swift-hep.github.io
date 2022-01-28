@@ -1,0 +1,29 @@
+baseURL = 'https://swift-hep.github.io'
+languageCode = 'en-us'
+title = 'SWIFT-HEP'
+
+theme = "swift-hep"
+relativeURLS = true
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+description = "SoftWare and InFrastruture Technology for High Energy Physics"
+github_org = "https://github.com/swift-hep"
+
+sectionPagesMenu = "main"
+[menu]
+  [[menu.main]]
+     identifier = "workpackages"
+     title = "Work Packages"
+     url = "/workpackages/"
+     weight = 200
