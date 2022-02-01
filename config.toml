@@ -5,6 +5,8 @@ title = 'SWIFT-HEP'
 theme = "swift-hep"
 relativeURLS = true
 
+staticDir = ['static']
+
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
@@ -26,4 +28,30 @@ sectionPagesMenu = "main"
      identifier = "workpackages"
      title = "Work Packages"
      url = "/workpackages/"
+     weight = 150
+ [[menu.main]]
+     identifier = "overview"
+     title = "Overview"
+     url = "/overview/"
+     weight = 100
+ [[menu.main]]
+     identifier = "organisation"
+     title = "Organisation"
+     url = "/organisation/"
      weight = 200
+ [[menu.main]]
+     identifier = "meetings"
+     title = "Meetings"
+     url = "https://indico.cern.ch/category/11790/"
+     weight = 220
+ [[menu.main]]
+     identifier = "jobs"
+     title = "Jobs"
+     url = "/jobs/"
+     weight = 230
+ [[menu.main]]
+     identifier = "links"
+     title = "Links"
+     url = "/links/"
+     weight = 240
+

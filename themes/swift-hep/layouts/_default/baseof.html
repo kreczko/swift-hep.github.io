@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
+    {{ partial "dropdown-navbar" . }}
+<body class="d-flex flex-column min-vh-100">
+    <header>{{- partial "header" . -}}
+</header>
+
     {{ partial "head" . }}
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <header>{{- partial "header" . -}}</header>
-    {{ partial "dropdown-navbar" . }}
 
     <main class="mb-auto">
         {{ block "main" . }}{{ end }}
