@@ -54,7 +54,8 @@ Each of the WPs has two conveners who facilitate communication within the UK com
 * WP4: Reconstruction and trigger
 * WP5: Analysis systems
 
-Additional activities are organised by SWIFT-HEP as additional community engagement, such as training events and hackathons. Full details to be given in the "News" session on the <a href="/index.html"> Home page</a>. <br>
+Additional activities are organised by SWIFT-HEP as additional community engagement, such as training events and hackathons. Full details to be given in the "News" session on the 
+[Home page]({{ .Site.Home.Permalink }}). <br>
 Participation in international workshops and meetings is essential to deliver a world-leading programme. Expertise is currently available in the UK as part of GridPP and of the experiments. SWIFT-HEP proposes to attach additional effort to this expertise to establish ourselves as a leading member of this international organisation.
 
 ## Complementary research 
