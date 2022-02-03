@@ -5,7 +5,8 @@ draft: false
 display_in_summary: false
 ---
 
-<h2> Science and strategy </h2>
+## Science and strategy 
+
 Computing contributes significantly to the cost of operating HEP experiments, with the UK currently providing 
 about 13.5% of the total ATLAS computing resources, 6% for CMS, 20% for LHCb and a significant fraction expected for DUNE. 
 Resources are provided as a cross-experiment initiative via GridPP with a cost of about £5M/year. 
@@ -32,29 +33,32 @@ to exploit the data to maximise the physics return on investment. This will also
 are in high-demand in UK industry.
 
 
-<h2> Timeline and funding</h2>
+## Timeline and funding
+
 The SWIFT-HEP project covers this crucial 3 year period between April 2021 and March 2024 for the UK to participate and lead the development of the means to execute the next generation experiments. Funding was awarded for an average of 4 FTE software developers/ applied physicists and was awarded at various universities in the UK. 
  Staff are funded at the 50% level by SWIFT-HEP, with the remaining 50% funded by an experiment grant to conduct work specific to such experimental collaboration. This ensures transfer of knowledge and expertise from the experiments to SWIFT-HEP and vice versa. <br>
 The timeline for the SWIFT-HEP project is summarised in the figure below. 
 SWIFT-HEP kicked off in April 2021, after amm STFC funded pilot project (ECHEP) and some additional funding from the UKRI ExCALIBUR initiative. The funding beyond April 2024 is still under discussion, however the proposal submitted in 2020 made it clear that the project need to continue and expand for the next decade. 
 <center> {{< figure src="/images/swift-timeline.png" alt="swift-hep timeline" width="600px">}} </center>
 
-<h2> Work packages and activities</h2>
+## Work packages and activities
+
 The SWIFT-HEP work is organised in 5 work packages (WP), plus a management WP. A description and status of each WP is given in the dedicated pages. 
 Each of the WPs has two conveners who facilitate communication within the UK community and interaction with external collaborators. 
-(<a href="/organisation/">See also</a>).
-<ul>
-<li> WP0: Management
-<li> WP1: Intelligent data and workflow management
-<li> WP2: Event generators
-<li> WP3: Simulation
-<li> WP4: Reconstruction and trigger
-<li> WP5: Analysis systems
-</ul>
+[See also](/organisation/).
+
+* WP0: Management
+* WP1: Intelligent data and workflow management
+* WP2: Event generators
+* WP3: Simulation
+* WP4: Reconstruction and trigger
+* WP5: Analysis systems
+
 Additional activities are organised by SWIFT-HEP as additional community engagement, such as training events and hackathons. Full details to be given in the "News" session on the <a href="/index.html"> Home page</a>. <br>
 Participation in international workshops and meetings is essential to deliver a world-leading programme. Expertise is currently available in the UK as part of GridPP and of the experiments. SWIFT-HEP proposes to attach additional effort to this expertise to establish ourselves as a leading member of this international organisation.
 
-<h2> Complementary research </h2>
+## Complementary research 
+
 The SWIFT-HEP work is centred around work that will serve the HEP experimental community by developing software tools that are between the Grid infrastructure and the frameworks that are specific to the experiments. This is described in Fig. 3, with the green layer 3 addressing cross-experiment issues. The full list of signatories is available in Appendix and shows the UK wide involvement in this initiative. The work proposal will be part of a growing international community and has as main reference points the Data Organisation Management and Access (​DOMA​) project within WLCG for the data management work and the ​HSF for the event generator, simulation, reconstruction and analysis work. <br>
 The complementarity of the SWIFT-HEP work with other packages of work in the HEP community is illustrated in the figure below.
 <center> {{< figure src="/images/swifthep-layers.png" alt="swift-hep Layers" width="600px">}} </center>
