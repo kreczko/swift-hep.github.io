@@ -1,7 +1,7 @@
 ---
 title: "New job opportunity in SWIFT-HEP (analysis) - deadline 14th Sep 2022"
 date: 2022-08-19T12:33:21+01:00
-draft: false
+draft: true
 start_date: 2022-08-19T12:33:21+01:00
 end_date: 2022-09-14T12:33:21+01:00
 menu:
