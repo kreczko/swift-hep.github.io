@@ -8,7 +8,7 @@ menu:
     weight: 260
     parent: "workpackages"
 type: workpackages
-weight: 50
+weight: 10
 display_in_summary: true
 shorthand: WP5
 ---

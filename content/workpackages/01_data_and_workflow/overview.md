@@ -8,7 +8,7 @@ menu:
     weight: 220
     parent: "workpackages"
 type: workpackages
-weight: 10
+weight: 30
 display_in_summary: true
 shorthand: WP1
 ---
