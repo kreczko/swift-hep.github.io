@@ -19,7 +19,7 @@ pygmentsUseClasses = true
 unsafe = true
 
 [params]
-description = "SoftWare and InFrastruture Technology for High Energy Physics"
+description = "SoftWare and InFrastructure Technology for High Energy Physics"
 github_org = "https://github.com/swift-hep"
 
 sectionPagesMenu = "main"
